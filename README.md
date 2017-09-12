@@ -2,6 +2,10 @@ To ask submit a question about License Zero for this page, visit <https://github
 
 **Do _not_ put confidential information about you, your work, or your clients in issues or pull requests.  Do _not_ ask for legal advice on GitHub, or try to disguise requests for legal advice as general questions or hypotheticals.  You don't want advice from anybody dumb enough to fall for that.**
 
+## Are you my lawyer?
+
+No.  [Not even close](https://licensezero.com/terms/service).
+
 ## What about tax?
 
 Tax rules about software license sales remain unfortunately complex.  In the United States, for example, some states don't charge any sales tax at all on sales of "canned", non-custom software sold without physical media.  Others tax transactions either from or to their jurisdiction differently, along those dimensions.
