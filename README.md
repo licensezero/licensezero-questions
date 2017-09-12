@@ -31,3 +31,11 @@ License Zero does not mandate any particular approach to contribution management
 1.  Contributors to License Zero projects may publicly license their contributions under the terms of an Open Source license, such as [BSD-2-Clause](https://spdx.org/licenses/BSD-2-Clause).  Commercial users will still need private licenses or waivers for the primary work by the License Zero licensor-maintainer, but can use the contributions under the Open Source terms.  The maintainer might choose to reward contributors with waivers, and contributors can attempt to negotiate for waivers to secure their contributions.  `CONTRIBUTING.md` or similar can make clear that there is a standing offer: "If you publicly license your patch BSD-2-Clause, I will give you a waiver for commercial use of my original work."
 
 2.  License Zero licensors can "stack" License Zero metadata in `package.json`'s `licensezero` property.  A fork of a License Zero package may require two private licenses or waivers to use commercially: one for the original work, one for the License Zero work on the fork.
+
+## What's the crypto situation?
+
+[licensezero.com](https://licensezero.com) creates and holds an [Ed25519](https://ed25519.cr.yp.to/) keypair in escrow for each licensor.  The server also has its own, "agent" keypair.
+
+Public keys are in NaCl, rather than SUPERCOP, format.  All signatures are detached.  Everything is hex encoded.  At present, the server uses [sodium](https://www.npmjs.com/package/sodium), and the CLI uses [TweetNaCL](https://www.npmjs.com/package/tweetnacl).
+
+NGINX terminates TLS with a certificate from [Let's Encrypt](https://letsencrypt.org/), and you can, too.
