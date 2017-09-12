@@ -23,3 +23,11 @@ Yes.  Say that Package A depends on Package B:
 - A not-for-profit user of Package A doesn't need any private license or waiver, either for Package A, or for Package B.
 
 - A for-profit user of Package A needs a private license or waiver for Package A, as well as a private license or waiver for Package B.  `l0-quote` and `l0-buy` recurse all of `node_modules`, and will pick up both A and B, assuming they have proper metadata.
+
+## How do I handle contribution?
+
+License Zero does not mandate any particular approach to contribution management or licensing.  It's flexible.  There is room to work on new approaches, and also a few readily available options:
+
+1.  Contributors to License Zero projects may publicly license their contributions under the terms of an Open Source license, such as [BSD-2-Clause](https://spdx.org/licenses/BSD-2-Clause).  Commercial users will still need private licenses or waivers for the primary work by the License Zero licensor-maintainer, but can use the contributions under the Open Source terms.  The maintainer might choose to reward contributors with waivers, and contributors can attempt to negotiate for waivers to secure their contributions.  `CONTRIBUTING.md` or similar can make clear that there is a standing offer: "If you publicly license your patch BSD-2-Clause, I will give you a waiver for commercial use of my original work."
+
+2.  License Zero licensors can "stack" License Zero metadata in `package.json`'s `licensezero` property.  A fork of a License Zero package may require two private licenses or waivers to use commercially: one for the original work, one for the License Zero work on the fork.
