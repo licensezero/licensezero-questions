@@ -36,6 +36,6 @@ License Zero does not mandate any particular approach to contribution management
 
 [licensezero.com](https://licensezero.com) creates and holds an [Ed25519](https://ed25519.cr.yp.to/) keypair in escrow for each licensor.  The server also has its own, "agent" keypair.
 
-Public keys are in NaCl, rather than SUPERCOP, format.  All signatures are detached.  Everything is hex encoded.  At present, the server uses [sodium-native](https://www.npmjs.com/package/sodium-native), and the CLI uses [TweetNaCL](https://www.npmjs.com/package/tweetnacl).
+Public keys are in NaCl, rather than SUPERCOP, format.  All signatures are detached.  Everything is hex encoded.  At present, the server uses [sodium-native](https://www.npmjs.com/package/sodium-native), and the CLI uses [TweetNaCl](https://www.npmjs.com/package/tweetnacl).
 
 NGINX terminates TLS with a certificate from [Let's Encrypt](https://letsencrypt.org/), and you can, too.
