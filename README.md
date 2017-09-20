@@ -16,16 +16,6 @@ Tax rules about software license sales remain unfortunately complex.  In the Uni
 
 In the future, License Zero may offer integration with a tax calculation and reporting service.  On first pass, existing services offer too much of the wrong thing, too little of what's actually needed, and usually too little actual warranty or risk protection to recommend.  For now, then, licensors should handle their own tax reporting, using the [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) codes associated with licensors, licensees, and waiver beneficiaries to guide them.
 
-## Can License Zero packages depend one on another?
-
-Yes.  Say that Package A depends on Package B:
-
-- The maintainer of A will almost certainly require a private license or waiver for use of Package B, since selling software for money falls under Condition 3 of the public license.
-
-- A not-for-profit user of Package A doesn't need any private license or waiver, either for Package A, or for Package B.
-
-- A for-profit user of Package A needs a private license or waiver for Package A, as well as a private license or waiver for Package B.  `l0-quote` and `l0-buy` recurse all of `node_modules`, and will pick up both A and B, assuming they have proper metadata.
-
 ## How do I handle contribution?
 
 License Zero does not mandate any particular approach to contribution management or licensing.  It's flexible.  There is room to work on new approaches, and also a few readily available options:
