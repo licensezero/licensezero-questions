@@ -1,5 +1,7 @@
 If you're having a problem using License Zero, [e-mail support](mailto:support@artlessdevices.com).
 
+This page lists a few common questions about License Zero that have ready answers.  To weigh in on questions and decisions about License Zero that haven't been answered yet, see [GitHub issues marked with the "open questions" tag](https://github.com/licensezero/licensezero-questions/labels/open%20questions).
+
 To suggest a question about License Zero for this page, open an issue or pull request [on GitHub](https://github.com/licensezero/licensezero-questions).
 
 **Do _not_ put confidential information about you, your work, or your clients in issues or pull requests.  Do _not_ ask for legal advice on GitHub, or try to disguise requests for legal advice as general questions or hypotheticals.  You don't want advice from anybody dumb enough to fall for that.**
